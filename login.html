@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        
+        <title>Página de login </title>   
+        
+        <style>
+            body{
+                background-color: #eee;
+            }
+            fieldset {
+                background-color: #ccc;
+                border: 1px solid purple;
+                width: 240px;
+                height: 150px;
+                margin: auto;           
+
+            }
+
+            input {
+                margin-bottom: 10px;
+                height: 20px;
+                font-size: 17px;
+            }
+
+            .round {
+                border-radius: 10px;
+            }
+
+            input[type='submit'] {
+                background-color: #999;
+                width: 80px;
+                height: 40px;
+                padding: 10px;
+            }
+
+            fieldset legend {
+                background-color: #eee;
+                font-size: 30px;
+                font-weight: bold;
+            }
+        
+        </style> 
+    
+    </head>
+    
+    <body>
+        
+        <form action="login.php" method="post">
+            
+            <fieldset>
+                
+                <legend>Bem vindo!</legend>
+                <label>
+                    <input class="round" type="text" name="user" maxlength="10" autocomplete="off" required placeholder="Usuário">
+
+                </label>
+                <br>
+                <label>
+                    <input class="round" type="password" name="senha" minlength="6" autocomplete="off" required placeholder="Senha">
+
+                </label>
+                <br>
+                <input type="submit" value="Entrar">
+                
+
+            </fieldset>
+        
+        </form>
+
+    </body>
+</html>
